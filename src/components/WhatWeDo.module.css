@@ -1,0 +1,139 @@
+.section {
+  position: relative;
+  z-index: 10;
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+.inner {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding: clamp(4rem, 9vw, 6rem) clamp(1.25rem, 4vw, 3rem) clamp(3.5rem, 8vw, 6rem);
+}
+
+.title {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.9rem, 4.5vw, 3.25rem);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  max-width: 20ch;
+  margin-bottom: clamp(0.75rem, 2vw, 1.25rem);
+}
+
+.subtitle {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  line-height: 1.75;
+  color: rgba(0, 0, 0, 0.65);
+  max-width: 65ch;
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.card {
+  position: relative;
+  background: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.28);
+  border-radius: 12px;
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+}
+
+.cardHighlight {
+  background: rgba(37, 150, 190, 0.08);
+  border-width: 2.5px;
+  border-color: var(--color-accent);
+}
+
+.cardBadge {
+  position: absolute;
+  top: clamp(1.25rem, 2.5vw, 1.75rem);
+  right: clamp(1.25rem, 2.5vw, 1.75rem);
+  background: var(--color-white);
+  color: var(--color-accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+}
+
+.cardIcon {
+  width: 24px;
+  height: 24px;
+  color: #6b7280;
+  margin-bottom: 0.9rem;
+}
+
+.cardIconLarge {
+  width: 38px;
+  height: 38px;
+}
+
+.cardIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cardTitle {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+}
+
+.cardDescription {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.cardMore {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: var(--color-white);
+  border: 1.5px dashed rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-family: inherit;
+  color: var(--color-black);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.cardMore:hover {
+  background: #f7f9fb;
+  border-color: rgba(0, 0, 0, 0.55);
+}
+
+.cardEnquiry {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: fit-content;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.cardEnquiry svg {
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
