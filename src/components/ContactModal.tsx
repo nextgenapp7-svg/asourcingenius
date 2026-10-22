@@ -90,6 +90,11 @@ export default function ContactModal({ onClose }: { onClose: () => void }) {
           <>
             <h3 className={styles.title}>Contact Us</h3>
             <form className={styles.form} onSubmit={handleSubmit} noValidate>
+              <label className={styles.honeypot} aria-hidden="true">
+                Website
+                <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+              </label>
+
               {errors.size > 0 && (
                 <p className={styles.formError}>Please fill in all required fields.</p>
               )}

@@ -57,12 +57,14 @@ export default function Footer() {
 
           <div className={styles.contact}>
             <span className={styles.linkListLabel}>Contact</span>
-            <a href="mailto:srishti.deomore@asourcingenius.com" className={styles.contactLink}>
-              srishti.deomore@asourcingenius.com
-            </a>
-            <span className={`${styles.contactLink} ${styles.contactLinkDisabled}`}>
+            <a
+              href="https://www.linkedin.com/company/asourcingenius"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.contactLink}
+            >
               LinkedIn
-            </span>
+            </a>
           </div>
         </nav>
       </div>
