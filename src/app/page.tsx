@@ -4,6 +4,7 @@ import OurExperts from "@/components/OurExperts";
 import Intro from "@/components/Intro";
 import WhatWeDo from "@/components/WhatWeDo";
 import HowWeWork from "@/components/HowWeWork";
+import Recognition from "@/components/Recognition";
 import Footer from "@/components/Footer";
 import ContactModalProvider from "@/components/ContactModalProvider";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Intro />
       <WhatWeDo />
       <HowWeWork />
+      <Recognition />
       <Footer />
     </ContactModalProvider>
   );

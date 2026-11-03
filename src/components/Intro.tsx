@@ -8,9 +8,10 @@ type Tile = { title: string; body: string; image?: string; imagePosition?: strin
 
 const TILES: Tile[] = [
   {
-    title: "Consult our engineers",
-    body: "Get expert advice on sourcing from India: which suppliers to choose, what parts should cost, and how to manage quality and compliance.",
-    image: "/tile-consult.png",
+    title: "Source parts from India",
+    body: "Send us your drawing and quantities. We find the right manufacturer, agree the price, follow your order through production, inspect it and ship it to you.",
+    image: "/tile-source-parts.png",
+    imagePosition: "center",
   },
   {
     title: "Find a new supplier",
@@ -35,6 +36,11 @@ const TILES: Tile[] = [
     body: "We inspect the goods before they leave, prepare the export documents and arrange delivery to you.",
     image: "/tile-ship.jpg",
     imagePosition: "center 65%",
+  },
+  {
+    title: "Get expert advice",
+    body: "Get expert advice on sourcing from India: which suppliers to choose, what parts should cost, and how to manage quality and compliance.",
+    image: "/tile-consult.png",
   },
 ];
 

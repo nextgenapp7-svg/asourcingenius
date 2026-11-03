@@ -1,10 +1,10 @@
 import styles from "./OurExperts.module.css";
 
 const EXPERTS = [
-  { years: "30 years", company: "Tata Motors" },
-  { years: "27 years", company: "Kalyani Steels" },
-  { years: "25 years", company: "Menon Bearings" },
-  { years: "30 years", company: "Industrialist" },
+  { name: "R. D. Jadhav", background: "Formerly Tata Motors" },
+  { name: "Shirish Deshpande", background: "Formerly Kalyani Steels" },
+  { name: "Abhijit Waichal", background: "Formerly Menon Bearings" },
+  { name: "Avinash Deomore", background: "Industrialist" },
 ];
 
 export default function OurExperts() {
@@ -16,16 +16,18 @@ export default function OurExperts() {
         </h2>
         <p className={styles.body}>
           Whether you give us one task or your entire supply chain, an
-          industry veteran with 25+ years at a leading Indian manufacturer
-          leads it. They are your single point of contact and stay involved
-          at every step.
+          industry veteran leads it. Our experts all have 20+ years of
+          experience at top-tier industrial companies such as Tata Motors,
+          Kalyani Steels and Menon Bearings, now working with us as project
+          leads. Your project lead is your single point of contact and stays
+          involved at every step.
         </p>
 
         <div className={styles.cards}>
           {EXPERTS.map((expert) => (
-            <div key={expert.company} className={styles.card}>
-              <span className={styles.cardYears}>{expert.years}</span>
-              <span className={styles.cardCompany}>{expert.company}</span>
+            <div key={expert.name} className={styles.card}>
+              <span className={styles.cardYears}>{expert.name}</span>
+              <span className={styles.cardCompany}>{expert.background}</span>
             </div>
           ))}
         </div>

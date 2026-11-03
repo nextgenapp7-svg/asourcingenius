@@ -38,11 +38,6 @@ export default function HowWeWork() {
             </li>
           ))}
         </ol>
-
-        <p className={styles.highlightText}>
-          Paid by you, for the service. Never a commission on what you buy,
-          never a payment from the supplier.
-        </p>
       </div>
     </section>
   );

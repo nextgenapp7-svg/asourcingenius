@@ -65,8 +65,9 @@
 .cardYears {
   font-family: var(--font-poppins), sans-serif;
   font-weight: 700;
-  font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
   color: var(--color-accent);
+  white-space: nowrap;
 }
 
 .cardCompany {

@@ -35,9 +35,10 @@ export default function Footer() {
 
           <h2 className={styles.title}>Your India operations, run by our engineers</h2>
           <p className={styles.body}>
-            Asourcingenius is an India based supply chain consulting firm,
-            helping medium to large scale clients abroad to find, setup and
-            run their onground supply chain operations in India.
+            Asourcingenius is an India-based sourcing and supply chain
+            company. We source parts and run supply chain operations on the
+            ground in India for medium and large companies abroad, from a
+            single order to your entire supply chain.
           </p>
         </div>
 

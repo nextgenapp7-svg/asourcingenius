@@ -43,24 +43,6 @@
   padding: clamp(1.25rem, 2.5vw, 1.75rem);
 }
 
-.cardHighlight {
-  background: rgba(37, 150, 190, 0.08);
-  border-width: 2.5px;
-  border-color: var(--color-accent);
-}
-
-.cardBadge {
-  position: absolute;
-  top: clamp(1.25rem, 2.5vw, 1.75rem);
-  right: clamp(1.25rem, 2.5vw, 1.75rem);
-  background: var(--color-white);
-  color: var(--color-accent);
-  font-size: 0.85rem;
-  font-weight: 700;
-  padding: 0.3rem 0.7rem;
-  border-radius: 999px;
-}
-
 .cardIcon {
   width: 24px;
   height: 24px;

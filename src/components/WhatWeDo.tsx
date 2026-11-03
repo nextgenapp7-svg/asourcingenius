@@ -134,7 +134,6 @@ const CATEGORIES = [
   {
     title: "Castings and machining",
     items: ["Grey and SG iron castings from our own shell moulding foundry", "Sand, steel, aluminium and bronze castings", "CNC-machined parts"],
-    badge: "Core strength",
     icon: MicroscopeIcon,
     largeIcon: true,
   },
@@ -196,11 +195,7 @@ export default function WhatWeDo() {
 
         <div className={styles.cards}>
           {CATEGORIES.map((category) => (
-            <div
-              key={category.title}
-              className={`${styles.card} ${category.badge ? styles.cardHighlight : ""}`}
-            >
-              {category.badge && <span className={styles.cardBadge}>{category.badge}</span>}
+            <div key={category.title} className={styles.card}>
               <div className={`${styles.cardIcon} ${category.largeIcon ? styles.cardIconLarge : ""}`}>
                 <category.icon />
               </div>

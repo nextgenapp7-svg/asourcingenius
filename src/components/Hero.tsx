@@ -9,13 +9,13 @@ export default function Hero() {
       <div className={styles.inner}>
         <div className={styles.copy}>
           <h1 className={styles.title}>
-            Your Indian operations, <span className={styles.titleAccent}>led by manufacturing veterans</span>
+            Your India operations, <span className={styles.titleAccent}>led by manufacturing veterans</span>
           </h1>
           <p className={styles.subtitle}>
-            Supply chain and engineering consulting. From a single supplier
-            audit to your entire supply chain, every project is led by an
-            industry veteran, with our team working at your suppliers&apos;
-            plants.
+            Sourcing and supply chain management in India. From sourcing a
+            single part to running your entire supply chain, every project
+            is led by an industry veteran, with our team working at your
+            suppliers&apos; plants.
           </p>
         </div>
 
